@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+/*.container{
+    display: flex;
+    flex-direction: row; poderia ser column
+    justify-content: flex-start; movimento horizontal (inverte no column)
+    align-items: flex-start; movimento vertical
+    
+    flex-wrap: wrap; quebra para a linha de baixo
+    align-content: flex-start;
+    
+    gap: 20px; espaço entre os itens no container
+}*/
+
+body{
+    margin: 0;
+    background-color:#FFFAFA;
+}
+
+h1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 3em;
+    text-align: center;
+}
+
+h2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: 700;
+}
+
+h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1em;
+    text-align: center;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    align-content: flex-end;
+    gap: 1%;
+    width: 100%;
+    padding: 2%;
+    
+}
+
+header div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 3em;
+    padding-bottom: 3em;
+}
+
+header h1 {
+    font-size: 300%;
+}
+
+.info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color:#FFC0CB;
+    width: 100%;
+}
+
+.info img{
+    width: 60%;
+}
+
+.info div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.why{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+    height: 12vw;
+    line-height: 1.5em;
+    height: 50%;
+    background-color: #F8F8FF;
+    width: 100%;
+}
+
+.why div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.why img{
+    width:35%;
+}
+
+.why h3{
+    margin-left: 21vw;
+
+}
+
+.products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 2vw;
+    text-align: center;
+    background-color:#FFFFF0;
+    padding: 2%;
+    width: 100%;
+}
+
+.products img{
+    width: 265px;
+    padding: 0.5em;
+}
+
+.products p{
+    font-size: 1em;
+    padding: 0.5em;
+    line-height: 1.5em;
+}
+
+.products div{
+    border: 5px solid;
+    border-radius: 1em;
+    border-color: #FFD700;
+    background-color:#FFA07A;
+}
+
+.called{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    align-content: flex-start;
+    background-color: #F8F8FF;
+    padding-bottom: 1vw;
+    width: 100%;
+}
+
+.called div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+}
+
+footer{
+    padding: 1vw 1vw;
+    background-color: #D3D3D3;
+}
+
+footer p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: flex-start;
+        gap: 1%;
+        width: 100%;
+        padding: 2%;
+        
+    }    
+    .info img{
+        display: none;
+    }
+    .why img{
+        display: none;
+    }
+}
+
+/*Após realização de testes no painel de controle, constatou-se que não haveria necessidade de alterar as medidas a baixo:
+
+Small devices (portrait tablets and large phones, 600px and up)
+@media only screen and (min-width: 600px) {
+
+}
+
+Medium devices (landscape tablets, 768px and up)
+@media only screen and (min-width: 768px) {
+
+}
+
+Large devices (laptops/desktops, 992px and up)
+@media only screen and (min-width: 992px) {
+
+}
+
+Extra large devices (large laptops and desktops, 1200px and up)
+@media only screen and (min-width: 1200px) {
+
+}*/
